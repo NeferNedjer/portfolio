@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    flex-grow: 1; /* Ajout de cette ligne pour que html et body prennent toute la hauteur */
+}
+
+
+main {
+    flex-grow: 1; /* Ajout de cette ligne pour que main prenne toute la hauteur */
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* border-bottom:1px solid #333; */
+}
+
+.navbar {
+    transition: all 0.5s ease-in-out;
+}
+
+
+.header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.header-title {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    background-color: #f5f5f5;
+    /* background-image: url("../img/fond-clair.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    text-align: center;
+    align-items: center;
+    font-size: 3.125rem;
+}
+
+#ulnavbar {
+    display: flex;
+}
+
+#ulnavbar li {
+    margin: 10px;
+    padding: 10px;
+}
+
+li :hover {
+    outline:2px solid #458dd4;
+    border-radius: 3px;
+    
+}
+
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#reseaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.625rem;
+    padding: 0.625rem;
+}
+
+#propos {
+    width: 70%;
+}
+
+#hero {
+    width: auto;
+    height: 62.5rem;
+    background-image: url("../img/multi-ecran.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#hero h1, #hero p {
+    color: #f5f5f5;
+}
+
+h1 {
+    font-size: 9.375rem;
+    padding: 2.100rem;
+    margin: 2.100rem;
+    /* text-shadow: 1px 1px 10px rgb(9, 126, 244); */
+}
+
+#hero p {
+    font-size: 3.125rem;
+    /* text-shadow: 1px 1px 10px rgb(9, 126, 244); */
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 8rem;
+    background-color: #fff;
+    background-image: url("../img/nappe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    text-align: center;
+    align-items: center;
+    font-size: 3.125rem;
+    color: #111;
+    /* border: 1px solid #333; */
+    
+}
+
+p {
+    color: #333;
+}
+.paragraphe  {
+    width: auto;
+    height: auto;
+    /* border: 1px solid #fff; */
+    padding: 10px;
+    /* backdrop-filter: blur(10px); */
+}
+
+.paragraphe-clair {
+    color: #f5f5f5;
+}
+
+
+#paraPropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 40rem;
+    background-color: #f5f5f5;
+    /* background-image: url("../img/nappe.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    /* background-attachment: fixed;  */
+    text-align: center;
+    align-items: center;
+    font-size: 1.875rem;
+    
+}
+
+.inter1 {
+    width: 100%;
+    height: 10rem;
+    background-image: url("../img/arriere.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.inter2 {
+    width: 100%;
+    height: 10rem;
+    background-image: url("../img/fond-technologie.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.inter3 {
+    width: 100%;
+    height: 10rem;
+    background-image: url("../img/fond-bluerose.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.actuellement {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40rem;
+    text-align: center;
+    align-items: center;
+    font-size: 1.875rem;
+    background-color: #f5f5f5;
+}
+
+
+#competences {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30rem;
+    background-color: #f5f5f5;
+    /* background-image: url("../img/screen.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    text-align: center;
+    align-items: center;
+    font-size: 1.875rem;
+}
+
+#portfolio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 62.5rem;
+    background-color: #111;
+    /* background-image: url("../img/fond-vague-noir.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    text-align: center;
+    align-items: center;
+    font-size: 1.875rem;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 62.5rem;
+    background-image: url("../img/screen.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    align-items: center;
+    font-size: 1.875rem;
+}
+
+form {
+    color: #fff;
+    padding: 10px;
+}
+
+form input {
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px 0 ;
+}
+
+form textarea {
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5rem; /* Taille pour les tablettes */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3rem; /* Taille pour les téléphones */
+    }
+}

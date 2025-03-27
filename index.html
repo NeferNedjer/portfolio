@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portfolio | Acceuil</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-title">
+            <h2 class="header-title">Mon portfolio</h2>
+        </div>
+        <nav class="navbar ">
+            <a href="#"><img src="img/logo.webp" alt="Logo" id="logo"></a>
+            <ul id="ulnavbar">
+                <li><a href="#" class="links">Acceuil</a></li>
+                <li><a href="#actu" class="links">Actu</a></li>
+                <li><a href="#Apropos" class="links">Profil</a></li>
+                <li><a href="#competences" class="links">Compétences</a></li>
+                <li><a href="#portfolio" class="links">Portfolio</a></li>
+                <li><a href="#contact" class="links">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Vincent Jurine</h1>
+        <p>Développeur web / web mobile</p>
+    </section>
+    
+    <section class="content-section" id="Apropos">
+        <div class="title" >
+            <h2 data-aos="flip-up">A propos de moi</h2>
+        </div>
+        <div id="paraPropos">
+            <div id="propos" class="paragraphe" data-aos="zoom-in">
+                <p>Passionné par l'informatique et en pleine reconversion en développement web,
+                 je mets à profit mon sens de l'analyse et ma rigueur acquis lors de mes expériences professionnelles.</p><br>
+                <p>Curieux et motivé, j'aime relever de nouveaux défis, apprendre et créer des solutions fonctionnelles et intuitives.</p><br>
+                <p> Mon objectif ? Concevoir des sites et applications modernes tout en continuant à me   perfectionner dans ce domaine en constante évolution.</p>
+            </div>
+        </div>
+    </section>
+    <div class="inter1">
+        
+    </div>
+    <section class="content-section">
+        <div class="title" id="actu">
+            <h2 data-aos="flip-up">Actuellement</h2>
+        </div>
+        <div class="actuellement">
+            <div class="paragraphe">
+                <p data-aos="zoom-out">Préparation du titre professionnel developpeur web / web mobile</p>
+            </div>
+        </div>
+    </section>
+    <div class="inter2">
+        
+    </div>
+    <section class="content-section">
+        <div class="title" id="Compet">
+            <h2 data-aos="flip-up">Compétences techniques</h2>
+        </div>
+        <div id="competences">
+            <div class="paragraphe">
+                <p data-aos="fade-right">Langages : JavaScript, PHP, HTML, CSS, SQL, Python.</p><br>
+                    
+                <p data-aos="fade-left">Frameworks : React, Vue.js, Symfony.</p><br>
+                    
+                <P data-aos="fade-right">Outils : Git, GitHub, Figma, VS Code, WordPress.</p><br>
+                    
+                <p data-aos="fade-left">Méthodologies : Agile/Scrum, POO.</p><br>
+                    
+                <p data-aos="fade-right">Web : Responsive design, Architecture MVC, Optimisation des performances.</p>
+            </div>
+        </div>
+    </section>
+    <div class="inter3">
+        
+    </div>
+    <section class="content-section">
+        <div class="title">
+            <h2 data-aos="flip-up">Portfolio</h2>
+        </div>
+        <div id="portfolio">
+            <p class="paragraphe-clair">Carroussel...</p>
+        </div>
+    </section>
+    <div class="inter4">
+        
+    </div>
+    <section class="content-section">
+        <div class="title">
+            <h2 data-aos="flip-up">Me contacter</h2>
+        </div>
+        <div id="contact">
+            <div class="paragraphe">
+                <form action="">
+                    <label for="nom" data-aos="fade-right">Nom* :</label>
+                    <input type="text" name="nom" id="nom" required data-aos="fade-right"><br>
+
+                    <label for="prenom" data-aos="fade-left">Prénom* :</label>
+                    <input type="text" name="prenom" id="prenom" required data-aos="fade-left"><br>
+
+                    <label for="e-mail" data-aos="fade-right">E-Mail* :</label>
+                    <input type="email" name="e-mail" id="e-mail" required data-aos="fade-right" >
+
+                    <label for="telephone" data-aos="fade-left">Téléphone* :</label>
+                    <input type="number" name="telephone" id="telephone" required data-aos="fade-left">
+
+                    <label for="objet" data-aos="fade-right">Objet* :</label>
+                    <input type="text" name="objet" id="objet" required data-aos="fade-right">
+
+                    <label for="message" data-aos="fade-left">Message* :</label>
+                    <textarea name="message" id="message"></textarea required data-aos="fade-left">
+                </form>
+                <p class="paragraphe-clair">* Champ obligatoire</p>
+            </div> 
+        </div>
+    </section>
+    <footer>
+        <a href="">Haut de page</a>
+        <div id="reseaux">
+            <img src="" alt="facebook">
+            <img src="" alt="instagram">
+            <img src="" alt="linkedin">
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
