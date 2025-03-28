@@ -16,7 +16,7 @@ function mouvementHeader(e) {
         header.style.translate = `0 -${headerTitle.scrollHeight}px`;
         navbar.style.backgroundColor = "white";
         links.forEach(link => {
-            link.style.color = "#333"; 
+            link.style.color = "#000"; 
         });
     } else {
         console.log("scroll vers le haut");

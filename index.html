@@ -16,9 +16,9 @@
             <a href="#"><img src="img/logo.webp" alt="Logo" id="logo"></a>
             <ul id="ulnavbar">
                 <li><a href="#" class="links">Acceuil</a></li>
-                <li><a href="#actu" class="links">Actu</a></li>
                 <li><a href="#Apropos" class="links">Profil</a></li>
-                <li><a href="#competences" class="links">Compétences</a></li>
+                <li><a href="#actuel" class="links">Actu</a></li>
+                <li><a href="#comp" class="links">Compétences</a></li>
                 <li><a href="#portfolio" class="links">Portfolio</a></li>
                 <li><a href="#contact" class="links">Contact</a></li>
             </ul>
@@ -45,7 +45,7 @@
     <div class="inter1">
         
     </div>
-    <section class="content-section">
+    <section id="actuel">
         <div class="title" id="actu">
             <h2 data-aos="flip-up">Actuellement</h2>
         </div>
@@ -58,7 +58,7 @@
     <div class="inter2">
         
     </div>
-    <section class="content-section">
+    <section id="comp">
         <div class="title" id="Compet">
             <h2 data-aos="flip-up">Compétences techniques</h2>
         </div>
@@ -84,7 +84,30 @@
             <h2 data-aos="flip-up">Portfolio</h2>
         </div>
         <div id="portfolio">
-            <p class="paragraphe-clair">Carroussel...</p>
+            <div id="slideshow">
+                <div class="entire-content">
+                    <div class="content-carrousel">
+                        <figure class="shadow">
+                            <video src="./img/blog.mp4" controls autoplay loop>
+                        </figure>
+                        <figure class="shadow">
+                            <video src="./img/Enregistrement de l'écran 2025-01-10 153457.mp4" controls autoplay muted loop>
+                        </figure>
+                        <figure class="shadow">
+                            <video src="./img/codoc.mp4" controls autoplay loop>
+                        </figure>
+                        <figure class="shadow">
+                            <video src="./img/mediasmart.mp4" controls autoplay loop>
+                        </figure>
+                        <figure class="shadow">
+                            <video src="./img/recettes.mp4" controls autoplay loop>
+                        </figure>
+                        <figure class="shadow">
+                            <video src="./img/space-invader.mp4" controls autoplay muted loop>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <div class="inter4">
@@ -95,36 +118,41 @@
             <h2 data-aos="flip-up">Me contacter</h2>
         </div>
         <div id="contact">
-            <div class="paragraphe">
-                <form action="">
-                    <label for="nom" data-aos="fade-right">Nom* :</label>
-                    <input type="text" name="nom" id="nom" required data-aos="fade-right"><br>
-
-                    <label for="prenom" data-aos="fade-left">Prénom* :</label>
-                    <input type="text" name="prenom" id="prenom" required data-aos="fade-left"><br>
-
-                    <label for="e-mail" data-aos="fade-right">E-Mail* :</label>
-                    <input type="email" name="e-mail" id="e-mail" required data-aos="fade-right" >
-
-                    <label for="telephone" data-aos="fade-left">Téléphone* :</label>
-                    <input type="number" name="telephone" id="telephone" required data-aos="fade-left">
-
-                    <label for="objet" data-aos="fade-right">Objet* :</label>
-                    <input type="text" name="objet" id="objet" required data-aos="fade-right">
-
-                    <label for="message" data-aos="fade-left">Message* :</label>
-                    <textarea name="message" id="message"></textarea required data-aos="fade-left">
-                </form>
-                <p class="paragraphe-clair">* Champ obligatoire</p>
-            </div> 
+            <div class="divcontact">
+                <div class="icon" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500" ><img src="./img/emplacement (1).png" alt=""></div>
+                <!-- <p data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">133 rue de la république</p> -->
+                <p data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">38550 Le péage de roussillon</p>
+            </div>
+            <div class="divcontact"> 
+               
+                <div class="icon" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500"><img src="./img/telephone.png" alt=""></div>
+                <p data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">06 72 45 71 74</p>  
+            </div>
+            <div class="divcontact">
+                
+                <div class="icon" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500"><img src="./img/e-mails.png" alt=""></div>
+                <p data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">vincejurine@gmail.com</p> 
+            </div>
         </div>
     </section>
     <footer>
-        <a href="">Haut de page</a>
+        <a class="fond-dark" href="">Haut de page</a>
+        <p class="fond-dark">© Copyright 2025 - NeferCompagny. Tous droits réservés.</p>
         <div id="reseaux">
-            <img src="" alt="facebook">
-            <img src="" alt="instagram">
-            <img src="" alt="linkedin">
+            <div class="icon"><img src="./img/github.webp" alt=""></div>
+            <div class="icon"><img src="./img/instagram.webp" alt=""></div>
+            <div class="icon"><img src="./img/linkedin.webp" alt=""></div>
+            
         </div>
     </footer>
     <script src="js/script.js"></script>

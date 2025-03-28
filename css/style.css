@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 html, body {
@@ -49,7 +50,7 @@ nav{
     width: 100%;
     padding: 10px;
     text-align: center;
-    color: #333;
+    color: #000;
     background-color: #f5f5f5;
     /* background-image: url("../img/fond-clair.webp");
     background-repeat: no-repeat;
@@ -70,7 +71,7 @@ nav{
 }
 
 li :hover {
-    outline:2px solid #458dd4;
+    outline:2px solid #5322da;
     border-radius: 3px;
     
 }
@@ -83,21 +84,15 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    scroll-margin-top: 18rem;
 }
 
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 #reseaux {
@@ -115,7 +110,7 @@ footer {
 #hero {
     width: auto;
     height: 62.5rem;
-    background-image: url("../img/multi-ecran.webp");
+    background-image: url("../img/arriere.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -142,22 +137,24 @@ h1 {
     justify-content: center;
     width: 100%;
     height: 8rem;
-    background-color: #fff;
-    background-image: url("../img/nappe.png");
+    
+    /* background-image: url("../img/nappe.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background: rgb(3,3,15);
+    background: linear-gradient(90deg, rgba(3,3,15,1) 32%, rgba(60,61,226,1) 66%, rgba(142,39,220,1) 85%, rgba(228,26,217,0.8183648459383753) 95%);
     /* background-attachment: fixed; */
     text-align: center;
     align-items: center;
     font-size: 3.125rem;
-    color: #111;
+    color: #f5f5f5;
     /* border: 1px solid #333; */
     
 }
 
 p {
-    color: #333;
+    color: #f5f5f5;
 }
 .paragraphe  {
     width: auto;
@@ -178,11 +175,13 @@ p {
     justify-content: center;
     width: auto;
     height: 40rem;
-    background-color: #f5f5f5;
-    /* background-image: url("../img/nappe.png");
+    background-image: url("../img/purple-blue.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; */
+    background-size: cover;
+    background-position: center;
+    background: rgb(3,3,15);
+    background: linear-gradient(90deg, rgba(3,3,15,1) 32%, rgba(60,61,226,1) 66%, rgba(142,39,220,1) 85%, rgba(228,26,217,0.8183648459383753) 95%);
+    background-blend-mode: color;
     /* background-attachment: fixed;  */
     text-align: center;
     align-items: center;
@@ -193,7 +192,7 @@ p {
 .inter1 {
     width: 100%;
     height: 10rem;
-    background-image: url("../img/arriere.webp");
+    background-image: url("../img/souri2.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -203,7 +202,7 @@ p {
 .inter2 {
     width: 100%;
     height: 10rem;
-    background-image: url("../img/fond-technologie.webp");
+    background-image: url("../img/still-life-books-versus-technology\ \(2\).webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -219,16 +218,28 @@ p {
     background-position: center;
     background-attachment: fixed;
 }
+
+.inter4 {
+    width: 100%;
+    height: 10rem;
+    background-image: url("../img/souri3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .actuellement {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 40rem;
+    height: 20rem;
     text-align: center;
     align-items: center;
     font-size: 1.875rem;
-    background-color: #f5f5f5;
+    background: rgb(3,3,15);
+    background: linear-gradient(90deg, rgba(3,3,15,1) 32%, rgba(60,61,226,1) 66%, rgba(142,39,220,1) 85%, rgba(228,26,217,0.8183648459383753) 95%);
 }
 
 
@@ -238,7 +249,8 @@ p {
     flex-direction: column;
     width: 100%;
     height: 30rem;
-    background-color: #f5f5f5;
+    background: rgb(3,3,15);
+    background: linear-gradient(90deg, rgba(3,3,15,1) 32%, rgba(60,61,226,1) 66%, rgba(142,39,220,1) 85%, rgba(228,26,217,0.8183648459383753) 95%);
     /* background-image: url("../img/screen.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -255,7 +267,8 @@ p {
     flex-direction: column;
     width: 100%;
     height: 62.5rem;
-    background-color: #111;
+    background: rgb(3,3,15);
+    background: linear-gradient(90deg, rgba(3,3,15,1) 32%, rgba(60,61,226,1) 66%, rgba(142,39,220,1) 85%, rgba(228,26,217,0.8183648459383753) 95%);
     /* background-image: url("../img/fond-vague-noir.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,40 +279,140 @@ p {
     font-size: 1.875rem;
 }
 
+
+
 #contact {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     width: 100%;
-    height: 62.5rem;
-    background-image: url("../img/screen.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    height: 30rem;
+    background: rgb(3,3,15);
+    background: linear-gradient(90deg, rgba(3,3,15,1) 32%, rgba(60,61,226,1) 66%, rgba(142,39,220,1) 85%, rgba(228,26,217,0.8183648459383753) 95%);
     text-align: center;
     align-items: center;
     font-size: 1.875rem;
 }
 
-form {
-    color: #fff;
-    padding: 10px;
+.divcontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-form input {
-    width: 500px;
+.icon {
+    width: 50px;
     height: 50px;
-    padding: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
-    margin: 10px 0 ;
+    background-color: #f5f5f5;
 }
 
-form textarea {
-    width: 500px;
-    height: 200px;
-    padding: 10px;
+.icon img {
+    width: 40px;
+    height: 40px;
 }
+
+.fond-dark {
+    color: #333;
+}
+
+/*********** CARROUSSEL ***********/
+
+#slideshow {
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 600px;
+    width: 100%;
+}
+
+.entire-content {
+    margin: auto;
+    width: 400px;
+    /* height: 200px; */
+    perspective: 1000px;
+    position:relative;
+    padding-top: 80px;
+}
+
+.content-carrousel {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    /* float: right; */
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+    
+}
+
+.content-carrousel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.content-carrousel figure {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #3b444b;
+    overflow: hidden;
+    position:absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.content-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(400px);
+}
+.content-carrousel figure:nth-child(2) {
+    transform: rotateY(60deg) translateZ(400px);
+}
+.content-carrousel figure:nth-child(3) {
+    transform: rotateY(120deg) translateZ(400px);
+}
+.content-carrousel figure:nth-child(4) {
+    transform: rotateY(180deg) translateZ(400px);
+}
+.content-carrousel figure:nth-child(5) {
+    transform: rotateY(240deg) translateZ(400px);
+}
+.content-carrousel figure:nth-child(6) {
+    transform: rotateY(300deg) translateZ(400px);
+}
+
+.shadow  {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 1px;
+}
+
+.content-carrousel video {
+    image-rendering: auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-carrouselimg:hover {
+	transform: scale(1.2);
+	transition: all 300ms;
+}
+
+@keyframes rotar {
+	from {
+		transform: rotateY(0deg);
+	} to {
+		transform: rotateY(360deg);
+	}
+}
+
+
+
+
+
 
 @media (max-width: 768px) {
     h1 {
