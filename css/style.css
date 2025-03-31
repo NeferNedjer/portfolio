@@ -39,6 +39,7 @@ nav{
 }
 
 
+
 .header {
     position: fixed;
     z-index: 2;
@@ -65,15 +66,41 @@ nav{
     display: flex;
 }
 
+#ulnavbar .links::after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    background: rgba(228,26,217,0.8183648459383753);
+    transform: scale(0);
+    transition: transform 0.4s;
+    transform-origin: right;
+    animation: fade-in 0.8s;
+}
+
+#ulnavbar .links:hover::after {
+    transform: scale(1);
+    transform-origin: left;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
 #ulnavbar li {
     margin: 10px;
     padding: 10px;
-}
-
-li :hover {
-    outline:2px solid #5322da;
-    border-radius: 3px;
-    
 }
 
 
