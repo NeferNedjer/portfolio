@@ -8,7 +8,6 @@
 
 html, body {
     height: 100%;
-    flex-grow: 1; /* Ajout de cette ligne pour que html et body prennent toute la hauteur */
 }
 
 
@@ -28,17 +27,24 @@ a {
 nav{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between;
     align-items: center;
-    padding: 0 20px;
-    /* border-bottom:1px solid #333; */
+    padding: 0 10px;
 }
+
 
 .navbar {
     transition: all 0.5s ease-in-out;
 }
 
-
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
 
 .header {
     position: fixed;
@@ -51,15 +57,36 @@ nav{
     width: 100%;
     padding: 10px;
     text-align: center;
-    color: #000;
-    background-color: #f5f5f5;
-    /* background-image: url("../img/fond-clair.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
+    /* color: #000;
+    background-color: #f5f5f5; */
+    background: linear-gradient(
+        to right,
+        rgba(3,3,15,1) 32%,
+        rgba(60,61,226,1) 66%,
+        rgba(142,39,220,1) 85%,
+        rgba(228,26,217,0.8183648459383753) 95%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
     text-align: center;
     align-items: center;
     font-size: 3.125rem;
+}
+
+#container-header-title {
+    background-color: #f5f5f5;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 #ulnavbar {
@@ -151,12 +178,10 @@ h1 {
     font-size: 9.375rem;
     padding: 2.100rem;
     margin: 2.100rem;
-    /* text-shadow: 1px 1px 10px rgb(9, 126, 244); */
 }
 
 #hero p {
     font-size: 3.125rem;
-    /* text-shadow: 1px 1px 10px rgb(9, 126, 244); */
 }
 
 .title {
@@ -164,20 +189,12 @@ h1 {
     justify-content: center;
     width: 100%;
     height: 8rem;
-    
-    /* background-image: url("../img/nappe.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
     background: rgb(3,3,15);
     background: linear-gradient(90deg, rgba(3,3,15,1) 32%, rgba(60,61,226,1) 66%, rgba(142,39,220,1) 85%, rgba(228,26,217,0.8183648459383753) 95%);
-    /* background-attachment: fixed; */
     text-align: center;
     align-items: center;
     font-size: 3.125rem;
     color: #f5f5f5;
-    /* border: 1px solid #333; */
-    
 }
 
 p {
@@ -186,9 +203,7 @@ p {
 .paragraphe  {
     width: auto;
     height: auto;
-    /* border: 1px solid #fff; */
     padding: 10px;
-    /* backdrop-filter: blur(10px); */
 }
 
 .paragraphe-clair {
@@ -209,7 +224,6 @@ p {
     background: rgb(3,3,15);
     background: linear-gradient(90deg, rgba(3,3,15,1) 32%, rgba(60,61,226,1) 66%, rgba(142,39,220,1) 85%, rgba(228,26,217,0.8183648459383753) 95%);
     background-blend-mode: color;
-    /* background-attachment: fixed;  */
     text-align: center;
     align-items: center;
     font-size: 1.875rem;
@@ -278,11 +292,6 @@ p {
     height: 30rem;
     background: rgb(3,3,15);
     background: linear-gradient(90deg, rgba(3,3,15,1) 32%, rgba(60,61,226,1) 66%, rgba(142,39,220,1) 85%, rgba(228,26,217,0.8183648459383753) 95%);
-    /* background-image: url("../img/screen.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
     text-align: center;
     align-items: center;
     font-size: 1.875rem;
@@ -296,11 +305,6 @@ p {
     height: 62.5rem;
     background: rgb(3,3,15);
     background: linear-gradient(90deg, rgba(3,3,15,1) 32%, rgba(60,61,226,1) 66%, rgba(142,39,220,1) 85%, rgba(228,26,217,0.8183648459383753) 95%);
-    /* background-image: url("../img/fond-vague-noir.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
     text-align: center;
     align-items: center;
     font-size: 1.875rem;
@@ -335,7 +339,7 @@ p {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
 
 .icon img {
@@ -372,7 +376,7 @@ p {
     /* float: right; */
     animation: rotar 15s infinite linear;
     transform-style: preserve-3d;
-    
+    will-change: transform; 
 }
 
 .content-carrousel:hover {
@@ -437,18 +441,128 @@ p {
 }
 
 
-
-
-
-
 @media (max-width: 768px) {
     h1 {
-        font-size: 5rem; /* Taille pour les tablettes */
+        font-size: 5rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    section {
+        height: auto;
+    }
+
+    #paraPrpos {
+        height: auto;
+    }
+
+    #hero {
+        height: 50rem;
+        background-size: cover;
+    }
+
+    .paragraphe .paragraphe-clair {
+        font-size: 1.75rem;
+    }
+
+    .actuellement {
+        font-size: 1.75rem;
+    }
+
+    #competences, #portfolio, #contact {
+        font-size: 1.75rem;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-toggle {
+        display: block; /* Affiche le menu burger sur mobile */
+    }
+    
+    #ulnavbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding: 20px;
+    }
+
+    #ulnavbar.active {
+        display: flex;
+    }
+
+    #ulnavbar li {
+        padding: 10px;
+    }
+    
+    .header-title {
+        font-size: 2rem;
+        padding: 5px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 730px) {
     h1 {
-        font-size: 3rem; /* Taille pour les téléphones */
+        font-size: 5rem;
+        text-align: center;
     }
-}
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+      p, .paragraphe, .paragraphe-clair {
+        font-size: 1.5rem; 
+    }
+
+    a {
+        font-size: 1.2rem; 
+    }
+
+    .title {
+        font-size: 2rem; 
+    } 
+
+    #paraPropos {
+         height: auto;
+         font-size: 0.5rem;
+    }
+
+    .divcontact {
+        height: auto;
+    }
+    .divcontact p {
+        margin-bottom: 30px;
+    }
+
+    .icon {
+        margin: 20px;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #slideshow {
+        overflow: hidden;
+    }
+
+} 
+
+
+
