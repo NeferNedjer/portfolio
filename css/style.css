@@ -6,6 +6,10 @@
     font-family: "Nunito", sans-serif;
 }
 
+a {
+    
+}
+
 html, body {
     height: 100%;
 }
@@ -21,7 +25,8 @@ li {
 
 a {
     text-decoration: none;
-    font-size: 20px;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
 }
 
 nav{
@@ -70,7 +75,7 @@ nav{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
+    animation: textShine 3s ease-in-out infinite alternate;
     text-align: center;
     align-items: center;
     font-size: 3.125rem;
@@ -340,6 +345,10 @@ p {
     align-items: center;
     border-radius: 50px;
     background-color: #fff;
+}
+
+#reseaux .icon {
+    margin-bottom: 0;
 }
 
 .icon img {
