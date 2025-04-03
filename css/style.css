@@ -6,10 +6,6 @@
     font-family: "Nunito", sans-serif;
 }
 
-a {
-    
-}
-
 html, body {
     height: 100%;
 }
@@ -127,6 +123,21 @@ nav{
         opacity: 1;
     }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
 
 
 
