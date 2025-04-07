@@ -5,7 +5,6 @@ Bienvenue sur mon portfolio ! Ce projet présente une vitrine de mes compétence
 
 ## 🚀 Aperçu
 
-👉 [Voir le site en ligne](https://nefernedjer.github.io/portfolio/) *(remplace ce lien avec GitHub Pages ou Netlify)*
 
 ![Capture d'écran du portfolio](./img/capture.webp) *(ajoute une capture ici !)*
 
