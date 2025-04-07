@@ -6,7 +6,7 @@ Bienvenue sur mon portfolio ! Ce projet présente une vitrine de mes compétence
 ## 🚀 Aperçu
 
 
-![Capture d'écran du portfolio](./img/capture.webp) *(ajoute une capture ici !)*
+![Capture d'écran du portfolio](./img/capture.webp) 
 
 ---
 
